@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+body {
+    background: #F8F0E5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    height: 7vw;
+    background: #DAC0A3;
+    
+    
+}
+
+.nav-container h1{
+    margin-left: 40px;
+}
+
+.nav-container {
+    max-width: 90vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h1{
+    font-size: xx-large;
+    color: black;
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
+.order-button {
+}
+
+.fa-cart-shopping {
+    font-size: 2vw;
+}
+
+.nav-profile-cart {
+    position: relative;
+}
+
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.sidebar {
+    width: 20%;
+    padding: 10px;
+    
+}
+
+.sidebar h2 {
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 80px;
+    margin-bottom: -40px;
+    color: red;
+}
+
+.slide {
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide figure img {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.slide figure{
+    position: relative;
+    width: 200%;
+    margin: 0px;
+    left: 0px;
+    animation: shirt-slide 20s infinite linear;
+    display: flex;
+}
+
+@keyframes shirt-slide {
+    0% { left: 0; }
+    10% { left: 0; } 
+    20% { left: -100%; }
+    30% { left: -100%; } 
+    40% { left: -200%; }
+    50% { left: -200%; } 
+    60% { left: -300%; }
+    70% { left: -300%; } 
+    80% { left: -400%; }
+    90% { left: -400%; } 
+    100% { left: -300%; } 
+}
+
+.product {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.prduct-item {
+    cursor: pointer;
+}
+
+.prduct-item:hover {
+    transform: scale(1.1);
+}
+
+.product-img {
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+.button {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+.btnc {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+.total-price {
+}
+
+.price {
+    width: 50%;
+    margin-left: 200px;
+    margin-top: 30px;
+    font-size: x-large;
+}
+
+.form-box {
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 250px;
+    justify-items: center;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+.name {
+    padding: 20px;
+}
+
+.location {
+    padding: 20px;
+}
+
+.buttons {
+    margin-left: 1550px;
+    margin-top: 80px;
+    justify-content: space-between;
+}

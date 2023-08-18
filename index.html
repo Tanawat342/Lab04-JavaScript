@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+                <h1>HAFFU SHOP</h1>
+            <div class="nav-profile">
+                <div class="nav-profile-cart">
+                    <i class="fas fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h2>Best Seller !!</h2>
+            <div class="slide">
+                <figure>
+                    <img src="image/1.jpg" alt="">
+                    <img src="image/2.jpg" alt="">
+                    <img src="image/3.jpg" alt="">
+                    <img src="image/4.jpg" alt="">
+                    <img src="image/1.jpg" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="product">
+            <div class="prduct-item">
+                <img class="product-img" src="image/1.jpg" alt="">
+                <div class="product-detail">
+                <p>เสื้อฮู้ดสีแดง ราคา 299 THB</p>
+                </div>
+                <div>
+                    <label for="productA">จำนวนที่เลือก :</label>
+                    <input type="number" id="productAQuantity" min="0" value="0">
+                </div>
+                
+            </div>
+            <div class="prduct-item">
+                <img class="product-img" src="image/2.jpg" alt="">
+                <p>เสื้อฮู้ดสีฟ้า ราคา 299 THB</p>
+                <div>
+                    <label for="productB">จำนวนที่เลือก :</label>
+                    <input type="number" id="productBQuantity" min="0" value="0">
+                </div>
+            </div>
+            
+            <div class="prduct-item">
+                <img class="product-img" src="image/3.jpg" alt="">
+                <p>เสื้อฮู้ดสีดำ ราคา 599 THB</p>
+                <div>
+                    <label for="productC">จำนวนที่เลือก :</label>
+                    <input type="number" id="productCQuantity" min="0" value="0">
+                </div>
+            </div>
+            <div class="prduct-item">
+                <img class="product-img" src="image/4.jpg" alt="">
+                <p>เสื้อฮู้ดสีเหลือง ราคา 499 THB</p>
+                <div>
+                    <label for="productA">จำนวนที่เลือก :</label>
+                    <input type="number" id="productDQuantity" min="0" value="0">
+                </div>
+            </div>
+            
+            <button id="orderButton">Order Now</button>
+        
+            <p>Total amount: <span id="totalAmount">$0</span></p>
+            <p style="color: red;">ถ้าหากซื้อมากกว่า 1000 บาท รับส่วนลด 10% !! </p> 
+
+
+        </div>
+    </div>
+
+    <div class="form-box">
+        <form>
+            <div class="name">
+                <!--ส่วนของการกรอกชื่อ - นามสกุล-->
+                <dd>ข้าพเจ้า :
+                <input type="radio" id="นาย" name="gender" value="นาย" required >
+                <label for="gender">นาย</label>
+
+                <input type="radio" id="นาง" name="gender" value="นาง" >
+                <label for="gender">นาง</label>
+        
+                <input type="radio" id="นางสาว" name="gender" value="นางสาว" >
+                <label for="gender">นางสาว</label>
+        
+                <label for="fname">ชื่อ : </label>
+                <input type="text" id="fname" name="fname" maxlength="50" required> 
+
+                <label for="lname">นามสกุล : </label>
+                <input type="text" id="lname" name="lname" maxlength="50" required> 
+                </dd> 
+            </div>
+        </form>
+
+        <div class="location">
+            <label for="location"> ที่อยู่ที่จัดส่ง : </label>
+            <input type="text" id="location" maxlength="500" required>
+            <label for="phone-number">เบอร์โทรติดต่อ : </label>
+            <input type="text" id="phone-number" maxlength="10" pattern="[0-9]{1,10}" required title="กรุณากรอกเฉพาะตัวเลข 0-9" >
+        </div>
+
+        <div class="buttons">
+            <button id="resetButton">Reset</button>
+            <button id="submitButton">Submit</button>
+        </div>
+        
+
+    </div>
+
+
+</body>
+</html>
